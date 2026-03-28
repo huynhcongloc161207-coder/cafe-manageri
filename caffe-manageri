@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý quán cà phê</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>☕ Quản lý quán cà phê</h1>
+
+    <div class="form">
+        <input type="text" id="name" placeholder="Tên món">
+        <input type="number" id="price" placeholder="Giá">
+        <button onclick="addItem()">Thêm món</button>
+    </div>
+
+    <h2>Danh sách món</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Tên</th>
+                <th>Giá</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody id="menuList"></tbody>
+    </table>
+
+    <h2>🧾 Gọi món</h2>
+    <select id="orderSelect"></select>
+    <button onclick="orderItem()">Thêm vào hóa đơn</button>
+
+    <ul id="orderList"></ul>
+    <h3>Tổng tiền: <span id="total">0</span> VND</h3>
+
+    <script src="script.js"></script>
+</body>
+</html>
